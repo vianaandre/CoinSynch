@@ -2,6 +2,8 @@
   "name": "coinsynch",
   "version": "0.1.0",
   "private": false,
+  "author": "André Viana",
+  "license": "MIT",
   "scripts": {
     "start:dev": "next dev",
     "build": "next build",
