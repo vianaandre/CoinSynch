@@ -55,7 +55,8 @@ export const theme = {
 		},
 		WHITE: "#FFFFFF",
 		BLACK: "#000000", 
-		TEXT_BASE: "#5D6670"
+		TEXT_BASE: "#5D6670",
+		FILTER_BG: "rgba(93, 102, 112, 0.9)"
 	},
 	TYPOGRAPHY: {
 		FONT: ROBOTO.style.fontFamily,
@@ -88,6 +89,9 @@ export const theme = {
 		DESKTOP: "1216px",
 		TABLET: "672px",
 		MOBILE: "272"
+	},
+	TRANSITIONS: {
+		MEDIUM: "300ms",
 	},
 	SPACING: (size: number) => {
 		return `${size * 0.25}rem`;

@@ -57,10 +57,10 @@ export const GlobalStyles = createGlobalStyle`
         font-family: ${({ theme }) => theme.TYPOGRAPHY.FONT};
         font-style: normal;
     }
-    h1.regular, h2.regular, h3.regular, h4.regular, h5.regular, p.regular, label.regular {
+    .regular {
         font-weight: ${({ theme }) => theme.TYPOGRAPHY.WEIGHT.REGULAR};
     } 
-    h1.bold, h2.bold, h3.bold, h4.bold, h5.bold, p.bold, label.bold {
+    .bold {
         font-weight: ${({ theme }) => theme.TYPOGRAPHY.WEIGHT.BOLD};
     }
     h1.header {
@@ -93,22 +93,25 @@ export const GlobalStyles = createGlobalStyle`
         line-height: ${({ theme }) => theme.TYPOGRAPHY.HEIGHT[20]};
         letter-spacing: 0px;
     }
-    p.text {
+    .text {
         font-size: ${({ theme }) => theme.TYPOGRAPHY.SIZE[16]};
 
         line-height: ${({ theme }) => theme.TYPOGRAPHY.HEIGHT[16]};
         letter-spacing: 0px;
     }
-    label.label {
+    .label {
         font-size: ${({ theme }) => theme.TYPOGRAPHY.SIZE[14]};
 
         line-height: ${({ theme }) => theme.TYPOGRAPHY.HEIGHT[14]};
         letter-spacing: 0px;
     }
-    label.label_small {
+    .label_small {
         font-size: ${({ theme }) => theme.TYPOGRAPHY.SIZE[12]};
 
         line-height: ${({ theme }) => theme.TYPOGRAPHY.HEIGHT[12]};
         letter-spacing: 0px;
+    }
+    .text_base {
+        color: ${({ theme }) => theme.COLORS.TEXT_BASE};
     }
 `; 
