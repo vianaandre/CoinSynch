@@ -6,6 +6,8 @@ import { HomeProvider } from "common/hooks/useHome";
 import { SignUp } from "components/Home/SignUp";
 import { Banner } from "components/Home/Banner";
 import { About } from "components/Home/About";
+import { Cryptos } from "components/Home/Cryptos";
+import { Footer } from "components/Home/Footer";
 
 export default function Home() {
 	return (
@@ -13,8 +15,12 @@ export default function Home() {
 			<Header />
 			<SignIn />
 			<SignUp />
-			<Banner />
-			<About />
+			<main>
+				<Banner />
+				<About />
+				<Cryptos />
+			</main>
+			<Footer />
 		</HomeProvider>
 	);
 }

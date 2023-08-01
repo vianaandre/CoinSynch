@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ContainerBanner = styled.div`
+export const ContainerBanner = styled.section`
     position: relative;
     display: flex;
     flex-direction: column;

@@ -9,3 +9,4 @@ export { Currency } from "./Currency";
 export { Chart } from "./Chart";
 export { Computer } from "./Computer";
 export { Crypto } from "./Crypto";
+export { LogoSecondary } from "./LogoSecondary";

@@ -6,10 +6,12 @@ import { TypeCardAbout } from "./Type";
 export const CardAbout: React.FC<TypeCardAbout> = ({ icon, subtitle, text, title }) => {
 	return (
 		<ContainerCardAbout>
-			{icon}
-			<span>{subtitle}</span>
-			<h4 className="header">{title}</h4>
-			<p>{text}</p>
+			<div className="icon">
+				{icon}
+			</div>
+			<span className="text bold text_primary">{subtitle}</span>
+			<h4 className="header bold text_base">{title}</h4>
+			<p className="label regular text_base">{text}</p>
 		</ContainerCardAbout>
 	);
 };

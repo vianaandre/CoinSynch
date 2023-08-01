@@ -114,4 +114,10 @@ export const GlobalStyles = createGlobalStyle`
     .text_base {
         color: ${({ theme }) => theme.COLORS.TEXT_BASE};
     }
+    .text_primary {
+        color: ${({ theme }) => theme.COLORS.PRIMARY[500]};
+    }
+    .text_secondary {
+        color: ${({ theme }) => theme.COLORS.SECONDARY[500]};
+    }
 `; 
