@@ -1,4 +1,7 @@
 import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
 
 import { ContainerAbout } from "./styles";
 import { CardAbout } from "./CardAbout";
@@ -54,6 +57,50 @@ export const About: React.FC = () => {
 					</Button>
 				</div>
 			</Container>
+			<div className="cards_carousel">
+				<Swiper
+					slidesPerView={1}
+					centeredSlides={true}
+					spaceBetween={16}
+					pagination={{
+						type: "fraction",
+					}}
+					className="cards"
+				>
+					<SwiperSlide>
+						<CardAbout 
+							icon={<Chart size={64} color={theme.COLORS.PRIMARY[500]} />}
+							subtitle="For your company"
+							title="Crypto Solutions"
+							text="Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, "
+						/>
+					</SwiperSlide>
+					<SwiperSlide>
+						<CardAbout 
+							icon={<Crypto size={64} color={theme.COLORS.PRIMARY[500]} />}
+							subtitle="For your company"
+							title="Crypto Solutions"
+							text="Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, "
+						/>
+					</SwiperSlide>
+					<SwiperSlide>
+						<CardAbout 
+							icon={<Chart size={64} color={theme.COLORS.PRIMARY[500]} />}
+							subtitle="For your company"
+							title="Crypto Solutions"
+							text="Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, "
+						/>
+					</SwiperSlide>
+					<SwiperSlide>
+						<CardAbout 
+							icon={<Computer size={64} color={theme.COLORS.PRIMARY[500]} />}
+							subtitle="For your company"
+							title="Crypto Solutions"
+							text="Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, "
+						/>
+					</SwiperSlide>
+				</Swiper>
+			</div>
 		</ContainerAbout>
 	);
 };

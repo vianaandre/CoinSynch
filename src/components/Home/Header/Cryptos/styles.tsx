@@ -4,6 +4,14 @@ export const ContainerCryptos = styled.div`
     width: 360px;
     margin-left: auto;
 
+    @media(max-width: ${({ theme }) => theme.BREAKPOINTS.DESKTOP}) {
+        margin: 0 auto;
+    }
+
+    @media(max-width: ${({ theme }) => theme.BREAKPOINTS.TABLET}) {
+        width: 100%;
+    }
+
     .cryptos {
         .swiper-wrapper {
             transition-timing-function: linear;

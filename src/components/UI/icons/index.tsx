@@ -10,3 +10,5 @@ export { Chart } from "./Chart";
 export { Computer } from "./Computer";
 export { Crypto } from "./Crypto";
 export { LogoSecondary } from "./LogoSecondary";
+export { Menu } from "./Menu";
+export { ArrowDown } from "./ArrowDown";

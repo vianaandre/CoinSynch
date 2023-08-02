@@ -26,6 +26,11 @@ export const ContainerModal = styled.div<{
         box-shadow: 0px 12px 24px 0px rgba(0, 0, 0, 0.10);
         padding: ${({ theme }) => theme.SPACING(8)};
         position: relative;
+
+        @media(max-width: ${({ theme }) => theme.BREAKPOINTS.DESKTOP}) {
+            max-width: 320px;
+            padding: ${({ theme }) => theme.SPACING(6)};
+        }
         
         header {
             width: 100%;

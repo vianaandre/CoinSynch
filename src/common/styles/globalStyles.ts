@@ -68,36 +68,68 @@ export const GlobalStyles = createGlobalStyle`
 
         line-height: ${({ theme }) => theme.TYPOGRAPHY.HEIGHT[48]};
         letter-spacing: -1px;
+
+        @media(max-width: ${({ theme }) => theme.BREAKPOINTS.DESKTOP}) {
+            font-size: ${({ theme }) => theme.TYPOGRAPHY.SIZE[32]};
+        }
+
+        @media(max-width: ${({ theme }) => theme.BREAKPOINTS.DESKTOP}) {
+            font-size: ${({ theme }) => theme.TYPOGRAPHY.SIZE[20]};
+        }
     }
     h2.header {
         font-size: ${({ theme }) => theme.TYPOGRAPHY.SIZE[40]};
 
         line-height: ${({ theme }) => theme.TYPOGRAPHY.HEIGHT[40]};
         letter-spacing: -1px;
+
+        @media(max-width: ${({ theme }) => theme.BREAKPOINTS.DESKTOP}) {
+            font-size: ${({ theme }) => theme.TYPOGRAPHY.SIZE[32]};
+        }
+
+        @media(max-width: ${({ theme }) => theme.BREAKPOINTS.TABLET}) {
+            font-size: ${({ theme }) => theme.TYPOGRAPHY.SIZE[24]};
+        }
     }
     h3.header {
         font-size: ${({ theme }) => theme.TYPOGRAPHY.SIZE[32]};
 
         line-height: ${({ theme }) => theme.TYPOGRAPHY.HEIGHT[32]};
         letter-spacing: 0px;
+
+        @media(max-width: ${({ theme }) => theme.BREAKPOINTS.DESKTOP}) {
+            font-size: ${({ theme }) => theme.TYPOGRAPHY.SIZE[24]};
+        }
     }
     h4.header {
         font-size: ${({ theme }) => theme.TYPOGRAPHY.SIZE[24]};
 
         line-height: ${({ theme }) => theme.TYPOGRAPHY.HEIGHT[24]};
         letter-spacing: 0px;
+
+        @media(max-width: ${({ theme }) => theme.BREAKPOINTS.DESKTOP}) {
+            font-size: ${({ theme }) => theme.TYPOGRAPHY.SIZE[20]};
+        }
     }
     h5.header {
         font-size: ${({ theme }) => theme.TYPOGRAPHY.SIZE[20]};
 
         line-height: ${({ theme }) => theme.TYPOGRAPHY.HEIGHT[20]};
         letter-spacing: 0px;
+
+        @media(max-width: ${({ theme }) => theme.BREAKPOINTS.DESKTOP}) {
+            font-size: ${({ theme }) => theme.TYPOGRAPHY.SIZE[16]};
+        }
     }
     .text {
         font-size: ${({ theme }) => theme.TYPOGRAPHY.SIZE[16]};
 
         line-height: ${({ theme }) => theme.TYPOGRAPHY.HEIGHT[16]};
         letter-spacing: 0px;
+
+        @media(max-width: ${({ theme }) => theme.BREAKPOINTS.TABLET}) {
+            font-size: ${({ theme }) => theme.TYPOGRAPHY.SIZE[14]} !important;
+        }
     }
     .label {
         font-size: ${({ theme }) => theme.TYPOGRAPHY.SIZE[14]};
@@ -119,5 +151,24 @@ export const GlobalStyles = createGlobalStyle`
     }
     .text_secondary {
         color: ${({ theme }) => theme.COLORS.SECONDARY[500]};
+    }
+
+    // ANIMATIONS
+    @keyframes slideDown {
+        from {
+            height: 0;
+        }
+        to {
+            height: var(--radix-accordion-content-height);
+        }
+    }
+
+    @keyframes slideUp {
+        from {
+            height: var(--radix-accordion-content-height);
+        }
+        to {
+            height: 0;
+        }
     }
 `; 

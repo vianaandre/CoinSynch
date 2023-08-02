@@ -12,7 +12,6 @@ export const Cryptos: React.FC = () => {
 				spaceBetween={18}
 				slidesPerView={2}
 				loop={true}
-				navigation
 				speed={5000}
 				grabCursor
 				freeMode

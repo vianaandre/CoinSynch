@@ -24,13 +24,33 @@ export const ContainerFormSignUp = styled.form`
         > p {
             display: flex;
             gap: 2px;
+
+            @media(max-width: ${({ theme }) => theme.BREAKPOINTS.DESKTOP}) {
+                font-size: ${({ theme }) => theme.TYPOGRAPHY.SIZE[12]};
+            }
+
             button {
                 display: flex;
                 gap: 2px;
                 p {
                     color: ${({ theme }) => theme.COLORS.SECONDARY[500]};
+
+                    @media(max-width: ${({ theme }) => theme.BREAKPOINTS.DESKTOP}) {
+                        font-size: ${({ theme }) => theme.TYPOGRAPHY.SIZE[12]};
+                    }
+
                     strong {
                         color: ${({ theme }) => theme.COLORS.PRIMARY[500]};
+
+                        @media(max-width: ${({ theme }) => theme.BREAKPOINTS.DESKTOP}) {
+                            font-size: ${({ theme }) => theme.TYPOGRAPHY.SIZE[12]};
+                        }
+                    }
+                }
+
+                @media(max-width: ${({ theme }) => theme.BREAKPOINTS.DESKTOP}) {
+                    strong {
+                        font-size: ${({ theme }) => theme.TYPOGRAPHY.SIZE[12]};
                     }
                 }
 

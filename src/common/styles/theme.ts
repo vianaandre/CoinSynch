@@ -56,7 +56,8 @@ export const theme = {
 		WHITE: "#FFFFFF",
 		BLACK: "#000000", 
 		TEXT_BASE: "#5D6670",
-		FILTER_BG: "rgba(93, 102, 112, 0.9)"
+		FILTER_BG: "rgba(93, 102, 112, 0.9)",
+		FILTER_BG_CRYPTOS: "rgba(246, 246, 246, 0.5)"
 	},
 	TYPOGRAPHY: {
 		FONT: ROBOTO.style.fontFamily,
@@ -88,7 +89,7 @@ export const theme = {
 	BREAKPOINTS: {
 		DESKTOP: "1216px",
 		TABLET: "672px",
-		MOBILE: "272"
+		MOBILE: "272px"
 	},
 	TRANSITIONS: {
 		MEDIUM: "300ms",

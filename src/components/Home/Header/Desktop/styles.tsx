@@ -9,4 +9,8 @@ export const ContainerDesktop = styled.div`
         display: flex;
         align-items: center;
     }
+
+    @media(max-width: ${({ theme }) => theme.BREAKPOINTS.DESKTOP}) {
+        display: none;
+    }
 `;

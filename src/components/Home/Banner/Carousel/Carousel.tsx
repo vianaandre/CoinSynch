@@ -1,9 +1,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import "swiper/css/free-mode";
 import Image from "next/image";
-import { FreeMode } from "swiper/modules";
 
 import { ContainerCarousel } from "./styles";
 import Carousel1 from "common/assets/banner/carousel-1.png";
@@ -16,11 +14,9 @@ export const Carousel: React.FC = () => {
 	return (
 		<ContainerCarousel>
 			<Swiper
-				slidesPerView={"auto"}
+				slidesPerView={2}
 				spaceBetween={202}
 				className="carousel_image"
-				freeMode
-				modules={[FreeMode]}
 			>
 				<SwiperSlide>
 					<div>
@@ -94,6 +90,7 @@ export const Carousel: React.FC = () => {
 						/>
 					</div>
 				</SwiperSlide>
+				<SwiperSlide></SwiperSlide>
 			</Swiper>
 		</ContainerCarousel>
 	);

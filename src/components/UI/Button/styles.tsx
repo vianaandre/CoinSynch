@@ -50,4 +50,9 @@ export const ContainerButton = styled.button<{
         filter: brightness(0.8);
         transition: ${({ theme }) => theme.TRANSITIONS.MEDIUM};
     }
+
+    @media(max-width: ${({ theme }) => theme.BREAKPOINTS.TABLET}) {
+        font-size: ${({ theme }) => theme.TYPOGRAPHY.SIZE[14]};
+        font-weight: ${({ theme }) => theme.TYPOGRAPHY.WEIGHT.REGULAR} !important;
+    }
 `;

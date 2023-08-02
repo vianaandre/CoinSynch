@@ -9,6 +9,14 @@ export const ContainerNewsletter = styled.div`
     position: relative;
     overflow: hidden;
 
+    @media(max-width: ${({ theme }) => theme.BREAKPOINTS.DESKTOP}) {
+        padding: ${({ theme }) => theme.SPACING(20)} 0px;
+    }
+
+    @media(max-width: ${({ theme }) => theme.BREAKPOINTS.DESKTOP}) {
+        padding: ${({ theme }) => theme.SPACING(14)} 0px;
+    }
+
     img.image_effect {
         width: 100%;
         position: absolute;
@@ -22,9 +30,18 @@ export const ContainerNewsletter = styled.div`
 
         position: relative;
         z-index: 1;
+
+        @media(max-width: ${({ theme }) => theme.BREAKPOINTS.DESKTOP}) {
+            flex-direction: column;
+            gap: ${({ theme }) => theme.SPACING(10)};
+        }
         
         div.left {
             width: 50%;
+
+            @media(max-width: ${({ theme }) => theme.BREAKPOINTS.DESKTOP}) {
+                width: 100%;
+            }
 
             h4.header {
                 color: ${({ theme }) => theme.COLORS.PRIMARY[200]};
@@ -37,6 +54,15 @@ export const ContainerNewsletter = styled.div`
                 color: ${({ theme }) => theme.COLORS.WHITE};
                 margin-top: ${({ theme }) => theme.SPACING(4)};
                 max-width: 385px;
+
+                @media(max-width: ${({ theme }) => theme.BREAKPOINTS.DESKTOP}) {
+                    max-width: 320px;
+                }
+
+                @media(max-width: ${({ theme }) => theme.BREAKPOINTS.DESKTOP}) {
+                    max-width: 100%;
+                    line-height: 170%;
+                }
             }
         }
 
@@ -45,12 +71,24 @@ export const ContainerNewsletter = styled.div`
             display: flex;
             justify-content: center;
 
+            @media(max-width: ${({ theme }) => theme.BREAKPOINTS.DESKTOP}) {
+                justify-content: flex-end;
+            }
+
+            @media(max-width: ${({ theme }) => theme.BREAKPOINTS.DESKTOP})  {
+                width: 100%;
+            }
+
             form {
                 width: 100%;
                 max-width: 384px;
                 display: flex;
                 flex-direction: column;
                 gap: ${({ theme }) => theme.SPACING(5)};
+
+                @media(max-width: ${({ theme }) => theme.BREAKPOINTS.DESKTOP}) {
+                    max-width: 320px;
+                }
 
                 div.input_email {
                     display: flex;
